@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h3 class="title">Open AI Image Generator</h3>
+        <a href="">Open API Docs</a>
+    </div>
+    <main>
+        <section class="form-sec">
+            <h2 class="heading">Describe An Image</h2>
+            <form action="" id="image-form">
+                <input type="text" id="prompt" placeholder="Describe image">
+                <select name="size" id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <button type="submit">Generate</button>
+            </form>
+        </section>
+        <section class="image-sec">
+            <p class="msg"></p>
+            <img src="" id="image" alt="">
+        </section>
+    </main>
+    <div class="spinner">Loading</div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

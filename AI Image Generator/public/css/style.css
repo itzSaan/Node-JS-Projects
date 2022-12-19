@@ -1,0 +1,77 @@
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin: 0;
+    background-color: #121416;
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5%;
+}
+.navbar h2 {
+    margin: 0;
+}
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.form-sec {
+    background-color: #ffc400;
+    text-align: center;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    padding-block: 0 2rem;
+}
+.form-sec form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-sec form input, select {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+.form-sec form input:focus, .form-sec form input:hover, select:focus, select:hover {
+    border-color: #121416;
+    outline: none;
+}
+.form-sec form button {    
+    padding: 10px 20px;
+    background-color: #121416;
+    color: #eee;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.image-sec {
+    text-align: center;
+}
+
+.spinner {
+    font-size: 1.5rem;
+    background-color: #12141654;
+    text-align: center;
+    display: none;
+}
+
+.spinner.show {
+    display: block;
+}
