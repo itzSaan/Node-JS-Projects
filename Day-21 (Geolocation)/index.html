@@ -17,6 +17,9 @@
     .wrap {
       text-align: center;
     }
+    .arrow {
+      transition: transform 0.1s ease-in-out;
+    }
     .speed {
       margin-top: 2rem;
       background-color: antiquewhite;
@@ -38,7 +41,7 @@
   <div class="speed">
     <h1 class="speed-text">0.00</h1>
     <span>KMH</span>
-  </div>
+  </div>  
   </div>
 
   <script>
@@ -46,9 +49,9 @@
     const speedText = document.querySelector('.speed-text')
 
     navigator.geolocation.watchPosition(position => {
-      // console.log(position.coords)
+      console.log(position.coords)
       const {speed, heading} = position.coords
-      speedText.innerText = speed
+      speedText.textContent = speed
       compass.style.transform = `rotate(${heading}deg)`
     }, err => {
       console.log(err)
